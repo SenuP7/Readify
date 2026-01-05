@@ -1,0 +1,77 @@
+.hero-text h1 {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.flow-card {
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.flow-card:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.flow-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.active-sound {
+  background: #c8643c;
+  color: #fff;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(200, 100, 60, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(200, 100, 60, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(200, 100, 60, 0);
+  }
+}
+
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-answer.show {
+  max-height: 200px;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 0.8rem;
+  border: none;
+  background: #f7efe9;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}

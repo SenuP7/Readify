@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Readify – Discover books, track reading progress, and get inspired." />
+  <title>Readify | Recommender</title>
+
+  <link rel="icon" href="items/icons/favicon.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#c8643c">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <img src="items/icons/icon-72x72.png" alt="Readify logo">
+            <span>Readify</span>
+        </div>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="explorer.html">Explore</a>
+            <a href="tracker.html">Tracker</a>
+            <a href="recommender.html" class="active">Recommend</a>
+            <a href="flow.html">Flow</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</header>
+
+<main class="recommender-page">
+
+  <section class="recommender-header">
+    <h1>Book Recommender</h1>
+    <p>Select a genre and let Readify choose your next read.</p>
+  </section>
+
+  <section class="recommender-controls">
+    <select id="genreSelect">
+      <option value="all">All Genres</option>
+    </select>
+
+    <button id="recommendBtn" class="primary-btn">
+      Recommend a Book
+    </button>
+  </section>
+
+  <section class="recommendation-result" id="recommendationResult">
+  </section>
+
+</main>
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3 class="footer-logo">Readify</h3>
+      <p>
+        Readify is a cozy space for book lovers to discover stories, track
+        their reading journey, and build a lifelong habit of reading.
+      </p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="explorer.html">Book Explorer</a></li>
+        <li><a href="recommender.html">Recommendations</a></li>
+        <li><a href="tracker.html">Reading Tracker</a></li>
+        <li><a href="flow.html">Reading Flow</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Stay in touch</h4>
+      <p>Get book recommendations and reading tips.</p>
+      <form id="newsletterForm">
+        <input type="email" id="newsletterEmail" placeholder="Your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <span id="newsletterMsg"></span>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Readify. All rights reserved.</p>
+  </div>
+</footer>
+<script src="js/data.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/recommender.js"></script>
+
+</body>
+</html>

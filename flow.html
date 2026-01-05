@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Readify | Flow</title>
+
+  <link rel="icon" href="items/icons/favicon.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#c8643c">
+  <link rel="stylesheet" href="css/animations.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <img src="items/icons/icon-72x72.png" alt="Readify logo">
+      <span>Readify</span>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="explorer.html">Explore</a>
+      <a href="tracker.html">Tracker</a>
+      <a href="recommender.html">Recommend</a>
+      <a href="flow.html" class="active">Flow</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<main class="flow-page">
+
+  <section class="flow-header">
+    <h1>Reading Flow</h1>
+    <p>Create a calm space and track your completed reads.</p>
+  </section>
+
+  <section class="flow-card">
+    <h2>Ambient Sounds</h2>
+    <div class="sound-controls">
+      <button type="button" data-sound="rain">Rain</button>
+      <button type="button" data-sound="fire">Fireplace</button>
+      <button type="button" data-sound="off">Silence</button>
+    </div>
+  </section>
+
+  <section class="flow-card">
+    <h2>Completed Books</h2>
+
+    <select id="completedSelect">
+      <option value="">Select a book</option>
+    </select>
+
+    <button id="addCompleted" class="primary-btn">
+      Mark as Completed
+    </button>
+
+    <ul id="completedList"></ul>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-bottom">
+    <p>© 2025 Readify. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/flow.js"></script>
+
+</body>
+</html>
